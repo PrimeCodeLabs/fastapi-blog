@@ -1,8 +1,4 @@
-# Web Application Documentation
-
-## Overview
-
-This document outlines the design and implementation of a web application following the MVC design pattern. The application is built using Python and FastAPI, interfacing with a MySQL database using SQLAlchemy for ORM, and employs Pydantic for data validation.
+# FastAPI blog
 
 ## Directory Structure
 
