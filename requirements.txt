@@ -1,0 +1,10 @@
+fastapi
+pydantic
+sqlalchemy
+pytest
+pymysql
+python-jose
+passlib
+cachetools
+bcrypt
+pydantic_settings
