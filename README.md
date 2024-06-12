@@ -7,36 +7,38 @@ This document outlines the design and implementation of a web application follow
 ## Directory Structure
 
 ```
-
-app
-├── **init**.py
-├── config.py
-├── controllers
-│ ├── **init**.py
-│ ├── post.py
-│ └── user.py
-├── db.py
-├── dependencies.py
-├── main.py
-├── models
-│ ├── **init**.py
-│ ├── post.py
-│ └── user.py
-├── schemas
-│ ├── **init**.py
-│ ├── post.py
-│ └── user.py
-├── services
-│ ├── **init**.py
-│ └── auth_service.py
+├── README.md
+├── app
+│   ├── __init__.py
+│   ├── configs
+│   │   ├── config.py
+│   │   └── local.env
+│   ├── controllers
+│   │   ├── __init__.py
+│   │   ├── post.py
+│   │   └── user.py
+│   ├── db.py
+│   ├── dependencies.py
+│   ├── main.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   ├── post.py
+│   │   └── user.py
+│   ├── schemas
+│   │   ├── __init__.py
+│   │   ├── post.py
+│   │   └── user.py
+│   ├── schemas.py
+│   └── services
+│       ├── __init__.py
+│       └── auth_service.py
+├── requirements.txt
+├── test.db
 └── tests
-├── **init**.py
-├── test_post.py
-└── test_user.py
-requirements.txt
-.env
-pytest.ini
-run_tests.sh
+    ├── conftest.py
+    ├── test.db
+    ├── test_post.py
+    └── test_user.py
 
 ```
 
@@ -150,29 +152,3 @@ The "GetPosts" endpoint uses in-memory caching with `cachetools` to cache respon
    ```sh
    pytest
    ```
-
-## Conclusion
-
-This application is designed to be modular and follows best practices in web application development. The use of environment variables, request validation, and caching ensures it is secure, efficient, and scalable.
-
-````
-
-### Final Steps
-
-1. **Ensure All Tests Pass**:
-   ```sh
-   pytest
-````
-
-2. **Commit and Push to GitHub**:
-
-   ```sh
-   git add .
-   git commit -m "Completed web application with all requirements"
-   git push origin main
-   ```
-
-3. **Submit Your Repository Link**:
-   Email the repository link to `lucidtasksubmission@gmail.com`.
-
-By following these steps, you ensure your application meets all the specified requirements and is ready for submission.
